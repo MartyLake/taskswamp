@@ -119,6 +119,9 @@ def main():
         args = [TMUX] + sum((cmd+[';'] for cmd in tmux_cmds), [])
     args = [
         'xterm',
+        '-bg','gray10',
+        '-fg','antique white',
+        '-fa','Terminus',
         '-xrm', 'XTerm*iconHint: {}'.format(XPM_PATH),
         '-T', sessionname,
         '-n', sessionname,
